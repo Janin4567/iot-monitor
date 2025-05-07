@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Vehículo IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+
+      <h1 class="titulo-principal text-center text-primary mb-4">Monitoreo de Vehículo IoT</h1>
+
+        <!-- Aquí se mostrará el status del primer dispositivo -->
+        <div id="statusInfo" class="text-center mb-3 fs-5 text-dark"></div>
+        
+        <table class="table table-bordered text-center align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th>ID</th>
+                    <th>IP</th>
+                    <th>Status</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <tr>
+                    <td colspan="4" class="text-muted">Cargando datos...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer class="text-center mt-5 py-3 bg-light border-top recuerdo">
+            Desarrollado por Janin Mestiza Mercado
+        </footer>
+        
+    </div>
+
+    <script src="js/monitoreo.js"></script>
+</body>
+</html>
